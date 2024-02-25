@@ -5,14 +5,12 @@
   "useTabs": false,
   "semi": true,
   "singleQuote": true,
-  "trailingComma": "es5",
+  "jsxSingleQuote": true,
+  "trailingComma": "all",
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "arrowParens": "avoid",
-  "overrides": [
-    {
-      "files": "*.svg",
-      "options": { "parser": "html" }
-    }
+  "plugins": [
+    "prettier-plugin-tailwindcss"
   ]
 }
