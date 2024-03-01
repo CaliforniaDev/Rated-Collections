@@ -1,0 +1,5 @@
+li {
+  @apply hover:text-secondary;
+  @apply transition-all;
+  @apply ease-in-out;
+}
