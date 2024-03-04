@@ -1,15 +1,11 @@
-'use client';
-import { useState } from 'react';
 import Image from 'next/image';
 import SearchBar from '@/components/ui/search/searchbar';
 import './styles.css';
 
-export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
 
-  function toggleSearch() {
-    setIsOpen(!isOpen);
-  }
+
+export default function Navbar() {
+
   return (
     <nav className='bg-surface-container fixed h-20 w-screen px-6 py-3 shadow'>
       <div className='flex h-full justify-between gap-12'>
