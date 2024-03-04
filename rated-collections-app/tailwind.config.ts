@@ -9,6 +9,7 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     colors: {
       primary: '#93D5AA',
@@ -38,7 +39,32 @@ const config: Config = {
       },
     },
   },
-  darkMode: 'class',
-  plugins: [nextui()],
+  plugins: [
+    nextui({
+      themes: {
+        light: {
+          colors: {
+            background: '#F6FBF4', // surface
+            foreground: '#181D19', // on-surface
+            primary: {
+              DEFAULT: '#2A6A47',
+              foreground: '#FFFFFF',
+            },
+          },
+        },
+
+        dark: {
+          colors: {
+            background: '#0F1511', // surface
+            foreground: '#DFE4DD', // on-surface
+            primary: {
+              DEFAULT: '#93D5AA',
+              foreground: '#00391F',
+            },
+          },
+        },
+      },
+    }),
+  ],
 };
 export default config;
