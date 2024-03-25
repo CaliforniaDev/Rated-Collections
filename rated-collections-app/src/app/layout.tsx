@@ -3,7 +3,7 @@ import { Roboto_Flex } from 'next/font/google';
 
 import './globals.css';
 
-import Navbar from '@/components/ui/navigation/desktop/navbar';
+import Navbar from '@/components/ui/navigation/desktop/Navbar';
 import Providers from '@/app/providers';
 
 const robotoFlex = Roboto_Flex({ subsets: ['latin'] });
