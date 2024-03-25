@@ -9,13 +9,14 @@ type NavLink = {
 };
 
 export default function NavLinks() {
-  const pathname = usePathname();
   const links: NavLink[] = [
     { title: 'Home', href: '/' },
     { title: 'Shop', href: '/shop' },
     { title: 'About', href: '/about' },
     { title: 'Contact', href: '/contact' },
   ];
+
+  const pathname = usePathname();
 
   return (
     <ul className='text-on-surface dark:text-on-surface-dark text-body-lg flex items-center gap-x-12 uppercase'>
