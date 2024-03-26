@@ -6,24 +6,26 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     colors: {
-      primary: '#93D5AA',
+      primary: '#2A6A47',
       secondary: '#B5CCBA',
-      'on-surface': '#DFE4DD',
-      'on-surface-variant': '#C0C9C0',
-      'surface-container': '#1C211D',
-      'surface-container-high': '#262B27',
+      'on-surface': '#181D19',
+      'on-surface-variant': '#414942',
+      'surface-container': '#EAEFE8',
+      'surface-container-high': '#E5EAE3',
+
+      'primary-dark': '#93D5AA',
+      'on-surface-dark': '#DFE4DD',
+      'on-surface-variant-dark': '#414942',
+      'surface-container-dark': '#1C211D',
+      'surface-container-high-dark': '#262B27',
     },
     fontSize: {
       'body-lg': ['16px', '24px'],
     },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
       rotate: {
         '270': '270deg',
       },
@@ -32,7 +34,13 @@ const config: Config = {
       },
       flex: {
         '2': '2 2 0%',
-      }
+      },
+
+      // backgroundImage: {
+      //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      //   'gradient-conic':
+      //     'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      // },
     },
   },
   plugins: [],
