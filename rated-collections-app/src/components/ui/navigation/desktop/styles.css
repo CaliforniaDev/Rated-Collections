@@ -1,5 +1,5 @@
 li {
-  @apply hover:text-primary dark:text-primary-dark;
+  @apply hover:text-primary dark:hover:text-primary-dark;
   @apply transition-all;
   @apply ease-in-out;
 }
