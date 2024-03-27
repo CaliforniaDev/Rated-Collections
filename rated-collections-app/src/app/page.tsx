@@ -3,10 +3,10 @@ import HeroSection from '@/components/sections/HeroSection';
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between py-20'>
+    <main className='relative flex min-h-screen flex-col items-center justify-between py-20'>
       <HeroSection
         backgroundImage='/images/hero/hollywood-sunset.webp'
-        overlayColor='#181D19'
+        overlayColor='rgba(18,29,25, 0.9)'
       >
         <h1 className='text-4xl'>Welcome to Rated Collections</h1>
         <Image
