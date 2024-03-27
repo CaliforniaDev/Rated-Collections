@@ -7,7 +7,7 @@ type HeroProps = {
 
 function HeroSection({ backgroundImage, overlayColor, children }: HeroProps) {
   return (
-    <div className='fullscreen-minus-nav relative w-full border'>
+    <div className='fullscreen-minus-nav relative w-full'>
       <div className='-z-10'>
         <Image
           priority
