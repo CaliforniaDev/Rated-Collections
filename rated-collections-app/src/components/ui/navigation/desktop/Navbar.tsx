@@ -10,16 +10,16 @@ import NavLinks from '@/components/ui/navigation/nav-links/NavLinks';
 export default function Navbar() {
   return (
     <header className='fixed z-50 w-screen shadow'>
-      <nav className='bg-surface-container dark:bg-surface-container-dark h-20 px-6 py-3'>
+      <nav className='bg-surface-container dark:bg-surface-container-dark h-20 px-12 py-3'>
         {/* Content parent wrapper */}
         <div className='flex h-full justify-between gap-12'>
           {/* Logo */}
-          <div className=' flex  min-w-20 basis-1/5 justify-center'>
+          <div className=' flex  min-w-20 basis-1/5'>
             <Link href='/'>
               <Image
                 src={logo}
                 alt='R8TED Collections'
-                style={{ width: '74px', height: 'auto' }}
+                width={74}
               />
             </Link>
           </div>
