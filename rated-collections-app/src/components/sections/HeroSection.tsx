@@ -14,7 +14,7 @@ function HeroSection({ backgroundImage, overlayColor, children }: HeroProps) {
           src={backgroundImage}
           fill
           className="object-cover object-center"
-          alt='Hero Image'
+          alt='Background image of hollywood sign'
         />
       </div>
       <div
