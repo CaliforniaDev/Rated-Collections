@@ -1,6 +1,7 @@
 import './styles.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import logo from '@/assets/svg/navigation/logo.svg';
 import SearchBar from '@/components/ui/search/searchbar';
 import BagIcon from '@/assets/svg/navigation/BagIcon';
 import { ThemeSwitcher } from '@/theme/ThemeSwitcher';
@@ -16,10 +17,8 @@ export default function Navbar() {
           <div className=' flex  min-w-20 basis-1/5 justify-center'>
             <Link href='/'>
               <Image
-                src='/images/navigation/logo.svg'
+                src={logo}
                 alt='R8TED Collections'
-                width={0}
-                height={0}
                 style={{ width: '74px', height: 'auto' }}
               />
             </Link>
@@ -38,7 +37,6 @@ export default function Navbar() {
             </div>
             <SearchBar />
           </div>
-          
         </div>
       </nav>
     </header>
