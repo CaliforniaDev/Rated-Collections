@@ -23,6 +23,7 @@ const config: Config = {
       'surface-container-high-dark': '#262B27',
     },
     fontSize: {
+      'display-lg': ['57px', '64px'],
       'body-lg': ['16px', '24px'],
     },
     extend: {
