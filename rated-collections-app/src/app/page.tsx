@@ -25,8 +25,8 @@ export default function Home() {
               </span>
               or not here we come!
             </h1>
-            <div className="flex gap-4 mt-7">
-              <Button>Shop Now</Button>
+            <div className='mt-7 flex gap-4'>
+              <Button variant='filled'>Shop Now</Button>
               <Button variant='outlined'>Subscribe</Button>
             </div>
           </header>
