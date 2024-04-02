@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
     colors: {
       primary: '#2A6A47',
+      'on-primary': '#FFFFFF',
       secondary: '#B5CCBA',
       'on-surface': '#181D19',
       'on-surface-variant': '#414942',
@@ -17,6 +18,7 @@ const config: Config = {
       'surface-container-high': '#E5EAE3',
 
       'primary-dark': '#93D5AA',
+      'on-primary-dark': '#00391F',
       'on-surface-dark': '#DFE4DD',
       'on-surface-variant-dark': '#414942',
       'surface-container-dark': '#1C211D',
@@ -25,6 +27,7 @@ const config: Config = {
     fontSize: {
       'display-lg': ['57px', '64px'],
       'body-lg': ['16px', '24px'],
+      'label-lg': ['14px', '20px'],
     },
     extend: {
       rotate: {
