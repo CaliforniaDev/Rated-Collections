@@ -26,7 +26,7 @@ export default function Home() {
               or not here we come!
             </h1>
             <div className='mt-7 flex gap-4'>
-              <Button variant='filled'>Shop Now</Button>
+              <Button route='/shop' variant='filled'>Shop Now</Button>
               <Button variant='outlined'>Subscribe</Button>
             </div>
           </header>
