@@ -2,7 +2,7 @@ import Image from 'next/image';
 import HeroSection from '@/components/sections/HeroSection';
 import heroImage from '@/assets/images/woman-wearing-black.webp';
 import heroBg from '@/assets/images/hollywood-sunset.webp';
-import Button from '@/components/ui/button/Button';
+import Button from '@/components/ui/buttons/Button';
 import { montserrat } from '@/app/fonts';
 export default function Home() {
   return (
