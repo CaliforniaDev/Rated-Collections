@@ -1,12 +1,10 @@
 import type { Metadata } from 'next';
-import { Roboto_Flex } from 'next/font/google';
+import { roboto_flex } from '@/app/fonts';
 
 import './globals.css';
 
 import Navbar from '@/components/ui/navigation/desktop/Navbar';
 import Providers from '@/app/providers';
-
-const robotoFlex = Roboto_Flex({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'R8TED Collections',
@@ -20,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={robotoFlex.className}>
+      <body className={roboto_flex.className}>
         <Providers>
           <Navbar />
           {children}
