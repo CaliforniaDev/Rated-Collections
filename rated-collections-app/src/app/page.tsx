@@ -3,6 +3,7 @@ import HeroSection from '@/components/sections/HeroSection';
 import heroImage from '@/assets/images/woman-wearing-black.webp';
 import heroBg from '@/assets/images/hollywood-sunset.webp';
 import Button from '@/components/ui/button/Button';
+import { montserrat } from '@/app/fonts';
 export default function Home() {
   return (
     <main className='relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-20'>
@@ -19,14 +20,16 @@ export default function Home() {
             alt="Woman wearing a black shirt with logo 'Rated Collection' on it."
           />
           <header className='text-display-lg absolute ml-28 mt-40 w-2/5 uppercase'>
-            <h1>
+            <h1 className={`${montserrat.className} font-medium`}>
               <span className='text-primary dark:text-primary-dark'>
                 R8ted{' '}
               </span>
               or not here we come!
             </h1>
             <div className='mt-7 flex gap-4'>
-              <Button route='/shop' variant='filled'>Shop Now</Button>
+              <Button route='/shop' variant='filled'>
+                Shop Now
+              </Button>
               <Button variant='outlined'>Subscribe</Button>
             </div>
           </header>
