@@ -30,11 +30,9 @@ const config: Config = {
       'label-lg': ['14px', '20px'],
     },
     extend: {
-      theme: {
-        fontFamily: {
-          display: ['var(--font-montserrat)', 'sans-serif'],
-          body: ['var(--font-roboto-flex)', 'sans-serif'],
-        }
+      fontFamily: {
+        display: ['var(--font-montserrat)', 'sans-serif'],
+        body: ['var(--font-roboto-flex)', 'sans-serif'],
       },
       rotate: {
         '270': '270deg',
