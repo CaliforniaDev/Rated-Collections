@@ -1,24 +1,46 @@
+import { motion } from 'framer-motion';
+
 type BurgerButtonProps = {
+  isOpen: boolean;
   onClick: () => void;
 };
 
-export default function BurgerButton({ onClick }: BurgerButtonProps) {
+export default function BurgerButton({ onClick, isOpen }: BurgerButtonProps) {
   return (
-    <button onClick={onClick} className='flex items-center lg:hidden'>
-      <svg
-        className='h-6 w-6'
-        fill='none'
-        stroke='currentColor'
+    <button
+      onClick={onClick}
+      className='lg:hidden stroke-on-surface dark:stroke-on-surface-dark border-primary flex flex-col items-center stroke-[2px]'
+    >
+      <motion.svg
+        animate={isOpen ? 'open' : 'closed'}
+        initial='closed'
+        width='24'
+        height='24'
         viewBox='0 0 24 24'
-        xmlns='http://www.w3.org/2000/svg'
       >
-        <path
+        <motion.path
           strokeLinecap='round'
-          strokeLinejoin='round'
-          strokeWidth={2}
-          d='M4 6h16M4 12h16m-7 6h7'
+          variants={{
+            closed: { d: 'M 1 1 L 23 1' },
+            open: { d: 'M 1 23 L 23 1' },
+          }}
         />
-      </svg>
+        <motion.path
+          strokeLinecap='round'
+          d='M 1 12 L 23 12'
+          variants={{
+            closed: { opacity: 1 },
+            open: { opacity: 0 },
+          }}
+        />
+        <motion.path
+          strokeLinecap='round'
+          variants={{
+            closed: { d: 'M 12 23 L 23 23' },
+            open: { d: 'M 1 1 L 23 23' },
+          }}
+        />
+      </motion.svg>
     </button>
   );
 }
