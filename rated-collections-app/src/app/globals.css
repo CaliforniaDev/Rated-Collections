@@ -30,7 +30,7 @@ body {
 }
 @layer components {
   .btn-base-styles {
-    @apply text-label-lg rounded-full px-6 py-3 font-medium uppercase;
+    @apply text-label-lg whitespace-nowrap rounded-full px-6 py-3 font-medium uppercase;
   }
 }
 @layer utilities {
