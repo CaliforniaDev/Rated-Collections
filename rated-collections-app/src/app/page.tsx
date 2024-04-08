@@ -20,7 +20,7 @@ export default function Home() {
             alt="Woman wearing a black shirt with logo 'Rated Collection' on it."
           />
           <header className='text-display-lg absolute ml-28 mt-40 w-2/5 uppercase'>
-            <h1 className={`${montserrat.className} font-medium`}>
+            <h1 className='text-display-sm md:text-display-md lg:text-display-lg'>
               <span className='text-primary dark:text-primary-dark'>
                 R8ted{' '}
               </span>
