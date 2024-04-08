@@ -34,6 +34,9 @@ const config: Config = {
         display: ['var(--font-montserrat)', 'sans-serif'],
         body: ['var(--font-roboto-flex)', 'sans-serif'],
       },
+      strokeWidth: {
+        '3': '3px',
+      },
       rotate: {
         '270': '270deg',
       },
