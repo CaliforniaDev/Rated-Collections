@@ -13,12 +13,12 @@ function HeroSection({ backgroundImage, overlayColor, children }: HeroProps) {
           priority
           src={backgroundImage}
           fill
-          className="object-cover object-center"
+          className='object-cover object-center'
           alt='Background image of hollywood sign'
         />
       </div>
       <div
-        className='absolute inset-0 flex p-12'
+        className='absolute inset-0 flex flex-col p-6 md:p-12'
         style={{ backgroundColor: overlayColor }}
       >
         {children}

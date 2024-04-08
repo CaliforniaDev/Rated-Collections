@@ -20,7 +20,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header className='fixed z-50 w-screen shadow'>
-      <nav className='bg-surface-container dark:bg-surface-container-dark relative h-20 px-12 py-3'>
+      <nav className='bg-surface-container dark:bg-surface-container-dark relative h-20 px-6 py-3 md:px-12'>
         {/* Content parent wrapper */}
         <div className='flex h-full justify-between gap-12'>
           {/* Logo */}
