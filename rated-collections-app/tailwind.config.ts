@@ -26,8 +26,20 @@ const config: Config = {
     },
     fontSize: {
       'display-lg': ['57px', '64px'],
+      'display-md': ['45px', '52px'],
+      'display-sm': ['36px', '44px'],
+      'heading-lg': ['28px', '36px'],
+      'heading-md': ['24px', '32px'],
+      'heading-sm': ['18px', '24px'],
       'body-lg': ['16px', '24px'],
+      'body-md': ['14px', '20px'],
+      'body-sm': ['12px', '16px'],
       'label-lg': ['14px', '20px'],
+      'label-md': ['12px', '16px'],
+      'label-sm': ['11px', '16px'],
+      'title-lg': ['22px', '28px'],
+      'title-md': ['16px', '24px'],
+      'title-sm': ['14px', '20px'],
     },
     extend: {
       fontFamily: {
