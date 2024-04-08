@@ -17,7 +17,7 @@ function Button({
 }: ButtonProps) {
   const router = useRouter();
 
-  // Common button styles
+  // Common button styles from global styles
   const baseClasses = 'btn-base-styles';
 
   // Variant specific styles
