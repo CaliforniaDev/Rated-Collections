@@ -19,7 +19,7 @@ export default function NavLinks() {
   const pathname = usePathname();
 
   return (
-    <ul className='text-on-surface dark:text-on-surface-dark text-body-lg flex items-center gap-x-12 uppercase'>
+    <ul className='text-on-surface dark:text-on-surface-dark text-body-lg flex flex-col items-end gap-x-12 uppercase lg:flex-row lg:items-center'>
       {links.map(link => (
         <li
           key={link.title}
