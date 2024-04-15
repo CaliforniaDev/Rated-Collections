@@ -25,7 +25,26 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
+h1 {
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+}
+h2 {
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+}
+h3 {
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+}
+.fullscreen-minus-nav {
+  height: calc(100vh - 5rem);
+}
+@layer components {
+  .btn-base-styles {
+    @apply text-label-lg whitespace-nowrap rounded-full px-6 py-3 font-medium uppercase;
+  }
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
