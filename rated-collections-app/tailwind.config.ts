@@ -23,6 +23,7 @@ const config: Config = {
       'on-surface-variant-dark': '#414942',
       'surface-container-dark': '#1C211D',
       'surface-container-high-dark': '#262B27',
+      'opaque-bg': 'rgba(18,29,25, 0.9)',
     },
     fontSize: {
       'display-lg': ['57px', '64px'],
@@ -42,6 +43,9 @@ const config: Config = {
       'title-sm': ['14px', '20px'],
     },
     extend: {
+      height: {
+        nav: '5rem',
+      },
       fontFamily: {
         display: ['var(--font-montserrat)', 'sans-serif'],
         body: ['var(--font-roboto-flex)', 'sans-serif'],
