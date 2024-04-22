@@ -46,6 +46,9 @@ const config: Config = {
       height: {
         nav: '5rem',
       },
+      padding: {
+        'nav-height': '5rem',
+      },
       fontFamily: {
         display: ['var(--font-montserrat)', 'sans-serif'],
         body: ['var(--font-roboto-flex)', 'sans-serif'],
