@@ -3,7 +3,6 @@ import HeroSection from '@/components/sections/HeroSection';
 import heroImage from '@/assets/images/woman-wearing-black.webp';
 import heroBg from '@/assets/images/hollywood-sunset.webp';
 import Button from '@/components/ui/buttons/Button';
-import { montserrat } from '@/app/fonts';
 export default function Home() {
   return (
     <main className='relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-20'>
