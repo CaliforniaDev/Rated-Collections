@@ -5,7 +5,7 @@ import smallHeroImage from '@/../public/images/hero/female-prince-hero.webp';
 import Button from '@/components/ui/buttons/Button';
 export default function Home() {
   return (
-    <main className='relative flex min-h-screen flex-col overflow-hidden pt-nav-height'>
+    <main className='pt-nav-height relative flex min-h-screen flex-col overflow-hidden'>
       <HeroSection>
         <div className='bg-primary relative col-span-2 flex h-2/3 overflow-hidden rounded-xl lg:h-full'>
           <Image
@@ -35,7 +35,7 @@ export default function Home() {
             </div>
           </header>
         </div>
-        <div className='relative rounded-xl overflow-hidden'>
+        <div className='relative overflow-hidden rounded-xl'>
           <Image
             priority
             src={smallHeroImage}
