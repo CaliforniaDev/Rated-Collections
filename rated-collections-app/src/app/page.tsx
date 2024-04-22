@@ -1,20 +1,20 @@
 import Image from 'next/image';
 import HeroSection from '@/components/sections/HeroSection';
-import heroImage from '@/assets/images/woman-wearing-black.webp';
-import heroBg from '@/assets/images/hollywood-sunset.webp';
+import heroImage from '@/../public/images/hero/bi-racial-couple_purple-white.webp';
+import smallHeroImage from '@/../public/images/hero/female-prince-hero.webp';
 import Button from '@/components/ui/buttons/Button';
 export default function Home() {
   return (
-    <main className='relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-20'>
-      <HeroSection backgroundImage={heroBg} overlayColor='rgba(18,29,25, 0.9)'>
-        <div className='bg-primary relative flex h-2/3 w-full overflow-hidden rounded-xl lg:h-full'>
+    <main className='relative flex min-h-screen flex-col overflow-hidden pt-20'>
+      <HeroSection>
+        <div className='bg-primary relative col-span-2 flex h-2/3 overflow-hidden rounded-xl lg:h-full'>
           <Image
             priority
             src={heroImage}
             fill
-            quality={100}
+            quality={85}
             placeholder='blur'
-            className='object-cover object-right'
+            className='object-cover'
             sizes='(min-width: 1200px) 1300px, (min-width: 768px) 650px, 100vw'
             alt="Woman wearing a black shirt with logo 'Rated Collection' on it."
           />
@@ -34,7 +34,17 @@ export default function Home() {
               <Button variant='outlined'>Subscribe</Button>
             </div>
           </header>
-          
+        </div>
+        <div className='relative rounded-xl overflow-hidden'>
+          <Image
+            priority
+            src={smallHeroImage}
+            fill
+            quality={85}
+            placeholder='blur'
+            className='object-cover'
+            alt='woman wearing white t shirt'
+          />
         </div>
 
         {/* Shows only on mobile devices */}
