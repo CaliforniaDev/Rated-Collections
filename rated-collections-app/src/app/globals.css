@@ -38,7 +38,7 @@ h3 {
   font-weight: 500;
 }
 .fullscreen-minus-nav {
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 5rem); /* 80px */
 }
 @layer components {
   .btn-base-styles {
