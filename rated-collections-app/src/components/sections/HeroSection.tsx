@@ -1,4 +1,3 @@
-import Image, { StaticImageData } from 'next/image';
 type HeroProps = {
   children: React.ReactNode;
 };
