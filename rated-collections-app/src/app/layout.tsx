@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { roboto_flex, montserrat } from '@/app/fonts';
+import BgImage from '@/components/ui/background/BgImage';
 
 import './globals.css';
 
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang='en' className={montserrat.variable}>
       <body className={roboto_flex.className}>
         <Providers>
+          <BgImage />
           <Navbar />
           {children}
         </Providers>
