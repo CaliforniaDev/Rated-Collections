@@ -14,7 +14,7 @@ export default function BgImage() {
         }}
         alt='background image of hollywood sign.'
       />
-      <div className='bg-opaque-bg absolute inset-0 '></div>
+      <div className=' bg-surface-container dark:bg-surface-container-dark absolute inset-0 opacity-70 dark:opacity-80 '></div>
     </div>
   );
 }
