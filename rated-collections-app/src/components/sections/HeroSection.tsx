@@ -4,7 +4,7 @@ type HeroProps = {
 
 function HeroSection({ children }: HeroProps) {
   return (
-    <div className='fullscreen-minus-nav relative grid grid-cols-3 gap-2 p-6 md:p-12 '>
+    <div className='fullscreen-minus-nav relative grid grid-cols-3 gap-4 p-6 md:p-12 '>
       {children}
     </div>
   );
