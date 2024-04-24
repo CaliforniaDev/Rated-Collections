@@ -1,8 +1,12 @@
 import Button from '@/components/ui/buttons/Button';
 
-export default function Header() {
+type HeaderProps = {
+  className?: string;
+};
+
+export default function Header({ className = '' }: HeaderProps) {
   return (
-    <header className='text-display-lg relative w-4/6 '>
+    <header className={`text-display-lg relative w-4/6 ${className}`}>
       <h1 className='text-display-sm md:text-display-md lg:text-display-md uppercase'>
         <span className='text-primary dark:text-primary-dark'>R8ted </span>
         or Not Here We Come!
