@@ -6,7 +6,7 @@ type HeaderProps = {
 
 export default function Header({ className = '' }: HeaderProps) {
   return (
-    <header className={`text-display-lg relative w-4/6 ${className}`}>
+    <header className={`text-display-lg relative ${className}`}>
       <h1 className='text-display-sm md:text-display-md lg:text-display-md uppercase'>
         <span className='text-primary dark:text-primary-dark'>R8ted </span>
         or Not Here We Come!
