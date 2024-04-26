@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className='pt-nav-height relative flex min-h-screen flex-col overflow-hidden'>
       <HeroSection>
-        <div className='hidden bg-primary relative col-span-2 md:flex items-end overflow-hidden rounded-xl p-10 h-full'>
+        <div className='bg-primary relative col-span-2 hidden h-full items-end overflow-hidden rounded-xl p-10 md:flex'>
           <Image
             priority
             src={heroImage}
@@ -21,9 +21,9 @@ export default function Home() {
             alt="Woman wearing a black shirt with logo 'Rated Collection' on it."
           />
           <Overlay />
-          <Header />
+          <Header className="w-4/6" />
         </div>
-        <div className='relative overflow-hidden rounded-xl'>
+        <div className='relative flex items-end overflow-hidden  rounded-xl p-6'>
           <Image
             priority
             src={smallHeroImage}
@@ -34,6 +34,7 @@ export default function Home() {
             alt='woman wearing white t shirt'
           />
           <Overlay />
+          <Header className='md:hidden w-full' />
         </div>
 
         {/* Shows only on mobile devices
