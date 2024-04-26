@@ -11,14 +11,28 @@ const config: Config = {
     colors: {
       primary: '#2A6A47',
       'on-primary': '#FFFFFF',
-      secondary: '#B5CCBA',
+
+      secondary: '#4E6354',
+      'on-secondary': '#FFFFFF',
+      'secondary-container': '#D1E8D5',
+      'on-secondary-container': '#0C1F14',
+
       'on-surface': '#181D19',
       'on-surface-variant': '#414942',
       'surface-container': '#EAEFE8',
       'surface-container-high': '#E5EAE3',
 
+      /**
+       * Dark Theme Below
+       */
       'primary-dark': '#93D5AA',
       'on-primary-dark': '#00391F',
+      
+      'secondary-dark': '#B5CCBA',
+      'on-secondary-dark': '#213528',
+      'secondary-container-dark': '#374B3D',
+      'on-secondary-container-dark': '#D1E8D5',
+
       'on-surface-dark': '#DFE4DD',
       'on-surface-variant-dark': '#414942',
       'surface-container-dark': '#1C211D',
