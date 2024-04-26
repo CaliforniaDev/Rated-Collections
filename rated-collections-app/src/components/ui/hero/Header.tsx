@@ -15,7 +15,7 @@ export default function Header({ className = '' }: HeaderProps) {
         <Button route='/shop' variant='filled'>
           Shop Now
         </Button>
-        <Button variant='outlined'>Subscribe</Button>
+        <Button variant='tonal'>Subscribe</Button>
       </div>
     </header>
   );
