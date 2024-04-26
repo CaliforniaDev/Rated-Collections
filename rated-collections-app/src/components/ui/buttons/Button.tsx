@@ -6,7 +6,7 @@ type ButtonProps = {
   children: string;
   route?: string;
   className?: string;
-  variant?: 'filled' | 'outlined';
+  variant?: 'filled' | 'outlined' | 'tonal';
 };
 
 function Button({
@@ -24,7 +24,9 @@ function Button({
   const variantClasses =
     variant === 'filled'
       ? 'bg-primary text-on-primary dark:bg-primary-dark dark:text-on-primary-dark'
-      : 'border border-primary text-primary dark:border-primary-dark dark:text-primary-dark';
+      : variant === 'outlined'
+        ? 'border border-primary text-primary dark:border-primary-dark dark:text-primary-dark'
+        : 'bg-secondary-container text-on-secondary-container dark:bg-secondary-container-dark dark:text-on-secondary-container-dark';
 
   // Combine all classes
   const buttonClasses = `${baseClasses} ${variantClasses} ${className}`;
